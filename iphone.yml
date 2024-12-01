@@ -10,16 +10,16 @@
         commands:
           - configure terminal
           - dial-peer voice 1 pots
-          - destination-pattern _00
+          - destination-pattern 1200
           - port 0/0/0
           - dial-peer voice 2 pots
-          - destination-pattern _01
+          - destination-pattern 1201
           - port 0/0/1
           - dial-peer voice 3 pots
-          - destination-pattern _02
+          - destination-pattern 1202
           - port 0/0/2
           - dial-peer voice 4 pots
-          - destination-pattern _03
+          - destination-pattern 1203
           - port 0/0/3
           - end
       vars:
@@ -36,24 +36,24 @@
           - no auto-reg-ephone
           - max-ephones 5
           - max-dn 20
-          - ip source-address 10._.100.8 port 2000
+          - ip source-address 10.12.100.8 port 2000
           - create cnf-files
           - ephone-dn 1
-          - number _11
+          - number 1211
           - ephone-dn 2
-          - number _22
+          - number 1222
           - ephone-dn 3
-          - number _33
+          - number 1233
           - ephone-dn 4
-          - number _44
+          - number 1244
           - ephone-dn 5
-          - number _55
+          - number 1255
           - ephone-dn 6
-          - number _66
+          - number 1266
           - ephone-dn 7
-          - number _77
+          - number 1277
           - ephone-dn 8
-          - number _88
+          - number 1288
           - ephone 1
           - Mac-address ___.____.___
           - type 8945
